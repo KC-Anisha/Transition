@@ -1,5 +1,6 @@
 package com.example.akc.transition;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -47,13 +48,13 @@ public class SignupActivity extends AppCompatActivity {
         if (isEmpty(userName)) {
             Toast t = Toast.makeText(this, "You must enter an username!", Toast.LENGTH_SHORT);
             t.show();
-        }
-        if (isEmpty(password)) {
+        } else if (isEmpty(password)) {
             Toast t = Toast.makeText(this, "Please enter a password", Toast.LENGTH_SHORT);
             t.show();
-        }
-        if (!isEmail(email)) {
+        } else if (!isEmail(email)) {
             email.setError("Enter valid email!");
+        } else {
+            startActivity(new Intent(SignupActivity.this, LoginActivity.class));
         }
     }
 }
