@@ -14,6 +14,14 @@ public class OnBoardActivity extends TutorialActivity {
         super.onCreate(savedInstanceState);
 
         // First Slide
+        addFragment(new Step.Builder().setTitle("Transition")
+                .setContent("Let's help you transition!")
+                .setBackgroundColor(Color.parseColor("#FF0957")) // int background color
+                .setDrawable(R.drawable.img4) // int top drawable
+                .setSummary("Have fun exploring")
+                .build());
+
+        // Second Slide
         addFragment(new Step.Builder().setTitle("This is header 1")
                 .setContent("This is content for the first slide")
                 .setBackgroundColor(Color.parseColor("#FF0957")) // int background color
@@ -21,7 +29,7 @@ public class OnBoardActivity extends TutorialActivity {
                 .setSummary("This is summary")
                 .build());
 
-        // Second Slide
+        // Third Slide
         addFragment(new Step.Builder().setTitle("This is header 2")
                 .setContent("This is content for second slide")
                 .setBackgroundColor(Color.parseColor("#FF0957")) // int background color
@@ -29,7 +37,7 @@ public class OnBoardActivity extends TutorialActivity {
                 .setSummary("This is summary")
                 .build());
 
-        // Third Slide
+        // Fourth Slide
         addFragment(new Step.Builder().setTitle("This is header 3")
                 .setContent("This is content for third slide")
                 .setBackgroundColor(Color.parseColor("#FF0957")) // int background color
@@ -40,17 +48,15 @@ public class OnBoardActivity extends TutorialActivity {
 
     @Override
     public void finishTutorial() {
-        Intent enterAppHome = new Intent(this, HomeActivity.class);
+        Intent enterAppHome = new Intent(OnBoardActivity.this, HomeActivity.class);
         startActivity(enterAppHome);
     }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
-
     }
 
     @Override
     public void currentFragmentPosition(int position) {
-
     }
 }
