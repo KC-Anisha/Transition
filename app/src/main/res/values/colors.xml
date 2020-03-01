@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="gender">#0176F3</color>
+    <color name="sexuality">#FBA806</color>
+    <color name="comingOut">#FE1146</color>
 </resources>
