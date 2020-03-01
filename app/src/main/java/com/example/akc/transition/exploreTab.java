@@ -26,7 +26,7 @@ public class exploreTab extends Fragment {
 //        container.findViewById(R.id.gender).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                startActivity(new Intent(exploreTab.this, exploreActivity.class));
+//                startActivity(new Intent(getActivity(), GenderActivity.class));
 //            }
 //        });
         return inflater.inflate(R.layout.fragment_explore_tab, container, false);
