@@ -14,11 +14,11 @@ public class OnBoardActivity extends TutorialActivity {
         super.onCreate(savedInstanceState);
 
         // First Slide
-        addFragment(new Step.Builder().setTitle("Transition")
-                .setContent("Let's help you transition!")
+        addFragment(new Step.Builder().setTitle("")
+                .setContent("")
                 .setBackgroundColor(Color.parseColor("#FF0957")) // int background color
                 .setDrawable(R.drawable.img4) // int top drawable
-                .setSummary("Have fun exploring")
+                .setSummary("")
                 .build());
 
         // Second Slide
