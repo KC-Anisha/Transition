@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validate(String username, String password){
         if ((username.equals("Admin")) && (password.equals("123"))){
-            startActivity(new Intent(LoginActivity.this, Explore.class));
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
         } else {
             Toast wrong = Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT);
             wrong.show();
