@@ -14,8 +14,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="195dp"
+        android:background="@drawable/custom_button"
         android:text="Log In"
         android:textSize="20sp"
+        android:textColor="@android:color/white"
         android:textAllCaps="false" />
 
     <Button
@@ -25,7 +27,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="75dp"
+        android:background="@drawable/custom_button"
         android:textSize="20sp"
+        android:textColor="@android:color/white"
         android:text="Sign Up"
         android:textAllCaps="false"/>
 </RelativeLayout>

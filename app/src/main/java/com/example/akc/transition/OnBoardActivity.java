@@ -3,6 +3,7 @@ package com.example.akc.transition;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.ColorInt;
 
 import com.hololo.tutorial.library.Step;
 import com.hololo.tutorial.library.TutorialActivity;
@@ -16,7 +17,7 @@ public class OnBoardActivity extends TutorialActivity {
         // First Slide
         addFragment(new Step.Builder().setTitle("")
                 .setContent("")
-                .setBackgroundColor(Color.parseColor("#0392cf")) // int background color
+                .setBackgroundColor(Color.parseColor("#0176F3")) // int background color
                 .setDrawable(R.drawable.img4) // int top drawable
                 .setSummary("")
                 .build());
@@ -24,7 +25,7 @@ public class OnBoardActivity extends TutorialActivity {
         // Second Slide
         addFragment(new Step.Builder().setTitle("This is header 1")
                 .setContent("This is content for the first slide")
-                .setBackgroundColor(Color.parseColor("#7bc043")) // int background color
+                .setBackgroundColor(Color.parseColor("#0176F3")) // int background color
                 .setDrawable(R.drawable.img1) // int top drawable
                 .setSummary("This is summary")
                 .build());
@@ -32,7 +33,7 @@ public class OnBoardActivity extends TutorialActivity {
         // Third Slide
         addFragment(new Step.Builder().setTitle("This is header 2")
                 .setContent("This is content for second slide")
-                .setBackgroundColor(Color.parseColor("#ee4035")) // int background color
+                .setBackgroundColor(Color.parseColor("#fba806")) // int background color
                 .setDrawable(R.drawable.img2) // int top drawable
                 .setSummary("This is summary")
                 .build());
@@ -40,7 +41,7 @@ public class OnBoardActivity extends TutorialActivity {
         // Fourth Slide
         addFragment(new Step.Builder().setTitle("This is header 3")
                 .setContent("This is content for third slide")
-                .setBackgroundColor(Color.parseColor("#f37736")) // int background color
+                .setBackgroundColor(Color.parseColor("#fe1146")) // int background color
                 .setDrawable(R.drawable.img3) // int top drawable
                 .setSummary("This is summary")
                 .build());
